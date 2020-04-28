@@ -1,0 +1,37 @@
+plugins {
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.8'
+}
+
+repositories {
+    mavenCentral()
+}
+
+javafx {
+    version = "14.0.1"
+    modules = [ 'javafx.controls' ]
+}
+
+sourceCompatibility = 14
+targetCompatibility = 14
+
+mainClassName = 'demo.HelloFX'
+
+wrapper {
+    description 'Setup the Gradle wrapper'
+    gradleVersion = '6.3'
+    distributionUrl = "https://services.gradle.org/distributions/gradle-${gradleVersion}-all.zip"
+}
+
+task copyLibraries(type: Copy) {
+    from jar
+    into "${buildDir}/libraries"
+}
+
+task copyModules(type: Copy) {
+    from configurations.runtimeClasspath
+    include "javafx*${javafx.platform.classifier}.jar"
+    into "${buildDir}/modules"
+}
+
+tasks.build.dependsOn copyLibraries, copyModules
