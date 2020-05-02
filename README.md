@@ -32,3 +32,4 @@ This repository was created to help in reporting a problem creating signed packa
 * [AdoptOpenJDK issue](https://github.com/AdoptOpenJDK/openjdk-build/issues/1718)
 * [OpenJDK Code Tools Dev mailing list](https://mail.openjdk.java.net/pipermail/code-tools-dev/2020-May/000595.html)
 * [OpenJDK Core Libs Dev mailing list](https://mail.openjdk.java.net/pipermail/core-libs-dev/2020-May/066194.html) (redirected by list administrator)
+* [Twitter thread](https://twitter.com/vocabhunterapp/status/1256248440784392192?s=20)
