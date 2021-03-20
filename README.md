@@ -33,3 +33,7 @@ This repository was created to help in reporting a problem creating signed packa
 * [OpenJDK Code Tools Dev mailing list](https://mail.openjdk.java.net/pipermail/code-tools-dev/2020-May/000595.html)
 * [OpenJDK Core Libs Dev mailing list](https://mail.openjdk.java.net/pipermail/core-libs-dev/2020-May/066194.html) (redirected by list administrator)
 * [Twitter thread](https://twitter.com/vocabhunterapp/status/1256248440784392192?s=20)
+
+## Update (20 March 2021)
+
+JDK 16 has now been released.  In this release `jpackage` has been promoted from "incubating" to "production-ready".  I've just tested this using v16+36 from [AdoptOpenJDK](https://adoptopenjdk.net) and everything now works and the signed build can be created without any problems.
